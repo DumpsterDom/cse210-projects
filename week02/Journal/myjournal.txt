@@ -1,0 +1,10 @@
+[DATE]November 06, 2025
+[PROMPT]What was the best part of your day?
+[RESPONSE]I was able to spend time with my kids well getting them ready for school.
+[MOOD]Great
+---END---
+[DATE]November 06, 2025
+[PROMPT]What can make tomorrow even better than today?
+[RESPONSE]Do better in my work and my mood
+[MOOD]Okay
+---END---
