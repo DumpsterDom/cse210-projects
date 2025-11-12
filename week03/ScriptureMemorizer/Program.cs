@@ -1,4 +1,4 @@
-// I added additional scriptures and a random fature to keep it exciting between them. 
+// I added additional scriptures and a random fature to keep it exciting between them. Have a play again option as well. 
 
 using System;
 using System.Collections.Generic;
