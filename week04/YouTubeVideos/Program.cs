@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create a list to hold all videos
+        // Video List
         List<Video> videos = new List<Video>();
 
         // Video 1
@@ -38,7 +38,7 @@ class Program
         video4.AddComment("Theo", "Fly Eagles Flt, on the road to victory!");
         videos.Add(video4);
 
-        // Display all videos and their comments
+        // Videos & Comments
         foreach (Video video in videos)
         {
             Console.WriteLine("========================================");
