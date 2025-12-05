@@ -89,13 +89,7 @@ public class GoalManager
         {
             "1" => new SimpleGoal(name, desc, points),
             "2" => new EternalGoal(name, desc, points),
-            "3" => {
-                Console.Write("How many times to accomplish? ");
-                int target = int.Parse(Console.ReadLine());
-                Console.Write("Bonus for completion: ");
-                int bonus = int.Parse(Console.ReadLine());
-                yield return new ChecklistGoal(name, desc, points, target, bonus);
-            },
+            "3" => PromptForChecklistGoal(name, desc, points),
             _ => null
         };
 
@@ -103,6 +97,10 @@ public class GoalManager
         {
             _goals.Add(goal);
             Console.WriteLine("Goal created!\n");
+        }
+        else
+        {
+            Console.WriteLine("Invalid goal type.\n");
         }
     }
 
@@ -181,5 +179,13 @@ public class GoalManager
             }
             Console.WriteLine("Goals loaded!\n");
         }
+    }
+    private Goal PromptForChecklistGoal(string name, string description, int points)
+    {
+        Console.Write("How many times does this goal need to be accomplished for a bonus? ");
+        int target = int.Parse(Console.ReadLine());
+        Console.Write("What is the bonus for accomplishing it that many times? ");
+        int bonus = int.Parse(Console.ReadLine());
+        return new ChecklistGoal(name, description, points, target, bonus);
     }
 }

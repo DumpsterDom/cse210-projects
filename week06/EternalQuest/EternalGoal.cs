@@ -5,10 +5,10 @@ public class EternalGoal : Goal
 
     public override int RecordEvent()
     {
-        return _points; // Always gives points
+        return _points; 
     }
 
-    public override bool IsComplete() => false; // Never complete
+    public override bool IsComplete() => false; 
 
     public override string GetStringRepresentation()
     {
